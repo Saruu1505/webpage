@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url("bildebank/skrivebord.jpg");
+  background-size: cover;
+  height: 200px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 221, 221);
+  padding: 10px;
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: rgb(47, 118, 142);
+}
+
+.main {
+  padding-left: 220px;
+  padding-right: 220px;
+  font-size: 20px;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5rem;
+  padding-top: 5rem;
+}
+.kontaktinfo {
+  text-align: center;
+}
+
+iframe {
+  padding-bottom: 2px;
+}
+
+nav ul {
+  list-style-type: none;
+  /* Kildehenvisning: https://www.w3schools.com/css/css_list.asp */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 15px;
+  margin: 10px;
+}
+
+figure {
+  text-align: center;
+}
+
+main h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+  padding: 10px;
+}
+
+.table div {
+  border: 1px solid;
+}
+
+.table2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  padding: 10px;
+}
+
+.table2 div {
+  border: 1px solid;
+}
+
+.head {
+  background-color: rgb(108, 138, 168);
+  font-weight: 700;
+}
+
+footer {
+  background-color: lightslategray;
+  text-align: center;
+  padding: 1px;
+  margin: 0.5px;
+}
+
+footer a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+section {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+footer a:hover {
+  color: rgb(47, 118, 142);
+}
+
+.contactform {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  max-width: 500px;
+}
+.contactform h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.contactform form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .table {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .table2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}

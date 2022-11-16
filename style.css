@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url("bildebank/skrivebord.jpg");
+  background-size: cover;
+  height: 200px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 221, 221);
+  padding: 10px;
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Kildehenvisning til nav a og nav a:hover: https://stackoverflow.com/questions/2789703/remove-blue-underline-from-link */
+
+nav a:hover {
+  color: rgb(47, 118, 142);
+}
+
+nav ul {
+  list-style-type: none;
+  /* Kildehenvisning: https://www.w3schools.com/css/css_list.asp */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 15px;
+  margin: 10px;
+}
+
+#intro-tekst {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main section {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main section a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  justify-content: end;
+  text-align: right;
+
+  gap: 10px;
+  margin: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+main section a:hover {
+  color: rgb(47, 118, 142);
+}
+
+#grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+main {
+  align-items: baseline;
+}
+
+.main-article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 5rem;
+  align-items: baseline;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.main-article p {
+  text-align: justify;
+  font-size-adjust: none;
+}
+
+footer {
+  display: grid;
+  background-color: lightslategray;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  color: rgb(47, 118, 142);
+}
+
+@media (max-width: 800px) {
+}
