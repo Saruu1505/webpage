@@ -18,7 +18,47 @@ header h1 {
   align-items: flex-end;
 }
 
+.navigation {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: lightblue;
+  padding: 5px;
+  transition: 1s;
+}
 
+.navigation h2 a {
+  display: block;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  transition: 0, 5s;
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  display: block;
+  padding: 40px 25px;
+  font-size: 18px;
+  line-height: 1;
+  transition: 0, 3s;
+}
+
+.menu li a:hover {
+  box-shadow: 0 -5px 0px #fff inset;
+  padding: 35px 25px 45px 25px;
+}
 
 .main {
   padding-left: 220px;
