@@ -24,17 +24,20 @@ header h1 {
 
 /* Kilde til hamburgermeny: https://www.youtube.com/watch?v=oLgtucwjVII */
 nav {
-  background: #d4c3c3;
+  background: #274247;
   height: 80px;
   width: 100%;
 }
 /* Kilde til hamburgermeny: https://www.youtube.com/watch?v=oLgtucwjVII */
-label.logo {
-  color: rgb(101, 7, 7);
+.logo {
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
+}
+
+.logo a {
+  color: white;
 }
 /* Kilde til hamburgermeny: https://www.youtube.com/watch?v=oLgtucwjVII */
 nav ul {
@@ -99,7 +102,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align:center;
+  text-align: center;
   padding: 20px;
   margin: 20px;
 }
@@ -146,7 +149,7 @@ h4 {
 }
 
 footer {
-  background-color: lightslategray;
+  background: #274247;
   text-align: center;
   padding: 1px;
   margin: 0.5px;
@@ -156,6 +159,11 @@ footer a {
   text-decoration: none;
   list-style-type: none;
   color: black;
+}
+
+footer a:hover {
+  color: #274247;
+  transition: 0.5s;
 }
 
 section {

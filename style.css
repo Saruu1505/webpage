@@ -81,36 +81,42 @@ main {
 }
 
 footer {
-  display: grid;
-  background-color: lightslategray;
   text-align: center;
-  padding: 0px;
-  margin: 0px;
+  padding: 1px;
+  margin: 0.5px;
+  background: #274247;
+  width: 100%;
 }
 
 footer a {
   text-decoration: none;
+  list-style-type: none;
   color: black;
 }
 
 footer a:hover {
-  color: rgb(47, 118, 142);
+  color: #274247;
+  transition: 0.5s;
 }
 
 /* Kilde til hamburgermeny: https://www.youtube.com/watch?v=oLgtucwjVII */
 nav {
-  background: #d4c3c3;
+  background: #274247;
   height: 80px;
   width: 100%;
 }
 /* Kilde til hamburgermeny: https://www.youtube.com/watch?v=oLgtucwjVII */
-label.logo {
-  color: rgb(101, 7, 7);
+.logo {
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
 }
+
+.logo a {
+  color: white;
+}
+
 /* Kilde til hamburgermeny: https://www.youtube.com/watch?v=oLgtucwjVII */
 nav ul {
   float: right;
@@ -171,7 +177,7 @@ a:hover {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #2c3e50;
+    background: #274247;
     top: 80px;
     left: -100%;
     text-align: center;
