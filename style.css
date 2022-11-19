@@ -81,17 +81,23 @@ main {
 }
 
 footer {
+  background: #274247;
   text-align: center;
   padding: 1px;
   margin: 0.5px;
-  background: #274247;
-  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
 }
 
 footer a {
   text-decoration: none;
   list-style-type: none;
-  color: black;
+  color: rgb(255, 255, 255);
+  padding: 25px;
+  margin: 25px;
+  display: flex;
+  text-align: center;
 }
 
 footer a:hover {
@@ -204,3 +210,4 @@ a:hover {
     left: 0;
   }
 }
+
