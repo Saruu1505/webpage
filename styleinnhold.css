@@ -91,6 +91,19 @@ a:hover {
   text-align: center;
 }
 
+.contactform {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align:center;
+  padding: 20px;
+  margin: 20px;
+}
+
 iframe {
   padding-bottom: 2px;
 }
