@@ -87,6 +87,7 @@ a:hover {
 .page {
   display: grid;
   grid-template-columns: auto auto;
+  align-items: baseline;
   gap: 5rem;
   padding-top: 5rem;
 }
@@ -183,13 +184,13 @@ footer a:hover {
   text-align: center;
   max-width: 500px;
 }
-.contactform h1 {
+.contactform h2 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 50px;
+  font-size: 25px;
   padding-bottom: 20px;
 }
 
-.contactform form {
+.kontaktinfo {
   display: flex;
   flex-direction: column;
   max-width: 500px;
