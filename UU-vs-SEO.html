@@ -362,12 +362,65 @@
             </div>
           </div>
         </section>
+
+        <!-- Kode under hentet fra: https://developers.facebook.com/docs/plugins/share-button/# -->
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script
+          async
+          defer
+          crossorigin="anonymous"
+          src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v15.0"
+          nonce="Mf9hOulJ"
+        ></script>
+
+        <div
+          class="fb-share-button"
+          data-href="https://nb-no.facebook.com/"
+          data-layout="button"
+          data-size="large"
+        >
+          <a
+            target="_blank"
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnb-no.facebook.com%2F&amp;src=sdkpreparse"
+            class="fb-xfbml-parse-ignore"
+            >Del</a
+          >
+        </div>
+
+        <!-- Kilde: https://publish.twitter.com/# -->
+        <a
+          href="https://twitter.com/intent/tweet?screen_name=Saruu1505&ref_src=twsrc%5Etfw"
+          class="twitter-mention-button"
+          data-show-count="false"
+          >Tweet to @Saruu1505</a
+        >
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
       </main>
 
       <footer>
-        <h4><a href="https://nb-no.facebook.com/">Facebook</a></h4>
-        <h4><a href="https://www.instagram.com//">Instagram</a></h4>
-        <h4><a href="https://twitter.com/i/flow/login/">Twitter</a></h4>
+        <h2>
+          <a
+            href="https://nb-no.facebook.com/"
+            class="fa-brands fa-facebook"
+          ></a>
+        </h2>
+        <h2>
+          <a
+            href="https://www.instagram.com//"
+            class="fa-brands fa-instagram"
+          ></a>
+        </h2>
+        <h2>
+          <a
+            href="https://twitter.com/i/flow/login/"
+            class="fa-brands fa-twitter"
+          ></a>
+        </h2>
       </footer>
     </div>
   </body>
