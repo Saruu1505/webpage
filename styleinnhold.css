@@ -128,7 +128,7 @@ h4 {
   display: grid;
   grid-template-columns: auto auto auto auto;
   text-align: center;
-  
+
   padding: 10px;
 }
 
@@ -215,6 +215,11 @@ section {
   .table2 {
     display: grid;
     grid-template-columns: auto auto auto;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }
 /* Kilde til hamburgermeny: https://www.youtube.com/watch?v=oLgtucwjVII */
