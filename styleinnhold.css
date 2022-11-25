@@ -12,7 +12,8 @@ header {
   height: 200px;
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #000000;
+  color: #ffffff;
+  
   padding: 10px;
 }
 
@@ -73,6 +74,7 @@ a:hover {
   margin-right: 40px;
   cursor: pointer;
   display: none;
+  text-shadow: none;
 }
 /* Kilde til hamburgermeny: https://www.youtube.com/watch?v=oLgtucwjVII */
 #check {
