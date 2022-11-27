@@ -23,6 +23,12 @@ header h1 {
   align-items: flex-end;
 }
 
+.screen {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Kilde til hamburgermeny: https://www.youtube.com/watch?v=oLgtucwjVII */
 nav {
   background: #274247;
@@ -82,9 +88,12 @@ a:hover {
 }
 
 .main {
-  padding-left: 220px;
-  padding-right: 220px;
   font-size: 20px;
+}
+
+.main article {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .page {
@@ -108,8 +117,6 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  padding: 20px;
-  margin: 20px;
 }
 
 iframe {
@@ -130,7 +137,6 @@ h4 {
   display: grid;
   grid-template-columns: auto auto auto auto;
   text-align: center;
-
   padding: 10px;
 }
 
@@ -142,11 +148,30 @@ h4 {
   display: grid;
   grid-template-columns: auto auto auto;
   text-align: center;
-
   padding: 10px;
 }
 
 .table2 div {
+  border: 1px solid;
+}
+
+.table3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
+
+.table3 div {
+  border: 1px solid;
+}
+
+.table4 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
+
+.table4 div {
   border: 1px solid;
 }
 
@@ -210,20 +235,54 @@ section {
 
 @media screen and (max-width: 767px) {
   .table {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .table2 {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .screen2 {
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    min-width: 90px;
   }
 
   .main {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
+  }
+  header h1 {
+    color: #ffffff;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .page {
+    display: grid;
+    grid-template-columns: auto;
   }
 }
+
 /* Kilde til hamburgermeny: https://www.youtube.com/watch?v=oLgtucwjVII */
 @media screen and (max-width: 952px) {
   label.logo {
@@ -250,6 +309,10 @@ section {
     left: -100%;
     text-align: center;
     transition: all 0.5s;
+  }
+
+  nav {
+    width: 100%;
   }
 
   nav ul li {

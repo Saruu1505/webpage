@@ -24,9 +24,10 @@ header h1 {
 
 #intro-tekst {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 10px;
-  margin: 10px;
+  grid-template-columns: auto auto;
+  padding: 20px;
+  margin: 20px;
+  text-align: left;
 }
 
 main section {
@@ -39,10 +40,8 @@ main section {
 main section a {
   display: flex;
   text-decoration: none;
-  color: black;
   justify-content: end;
   text-align: right;
-
   gap: 10px;
   margin: 10px;
   padding: 1rem;
@@ -174,7 +173,7 @@ a:hover {
   }
 }
 /* Kilde til hamburgermeny: https://www.youtube.com/watch?v=oLgtucwjVII */
-@media (max-width: 858px) {
+@media screen and (max-width: 858px) {
   .checkbtn {
     display: block;
   }
@@ -208,5 +207,22 @@ a:hover {
 
   #check:checked ~ ul {
     left: 0;
+  }
+}
+
+@media screen and (max-width: 867px) {
+  .main-article {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  header h1 {
+    color: #0e0e0f;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
   }
 }
