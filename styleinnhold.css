@@ -266,7 +266,10 @@ section {
   .main {
     display: grid;
     grid-template-columns: auto;
+    padding: 10px;
+    line-height: 150%;
   }
+
   header h1 {
     color: #ffffff;
   }

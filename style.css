@@ -214,6 +214,7 @@ a:hover {
   .main-article {
     display: grid;
     grid-template-columns: auto;
+    line-height: 150%;
   }
 
   header h1 {
