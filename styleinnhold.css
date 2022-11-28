@@ -140,6 +140,10 @@ h4 {
   padding: 10px;
 }
 
+.kart {
+  width: 100%;
+}
+
 .table div {
   border: 1px solid;
 }
@@ -271,7 +275,7 @@ section {
   }
 
   header h1 {
-    color: #ffffff;
+    color: #b5beb9;
   }
 
   footer {
@@ -326,12 +330,6 @@ section {
 
   nav ul li a {
     font-size: 20px;
-  }
-
-  a:hover,
-  a.active {
-    background: none;
-    color: #274247;
   }
 
   #check:checked ~ ul {

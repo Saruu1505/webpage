@@ -84,12 +84,12 @@
       <!-- Kilde til hamburgermeny: https://www.youtube.com/watch?v=oLgtucwjVII  -->
       <nav>
         <input type="checkbox" id="check" name="checkbtn" />
-        <label for="check" class="checkbtn">
+        <label for="check" class="checkbtn" aria-label="Checkbtn">
           <i class="fa-solid fa-bars"></i>
         </label>
         <label class="logo"><a href="index.html">Logo</a></label>
         <ul>
-          <li><a class="active" href="index.html" target="_blank">Hjem</a></li>
+          <li><a href="index.html" target="_blank">Hjem</a></li>
           <li><a href="UU-vs-SEO.html" target="_blank"> UU vs SEO</a></li>
           <li><a href="CMS.html" target="_blank">CMS</a></li>
           <li><a href="Analyse.html" target="_blank">Analyse</a></li>
@@ -116,7 +116,7 @@
               <p>Før</p>
               <img
                 class="screen2"
-                src="screenshots/empty heading1.png"
+                src="screenshots/emptyheading1.png"
                 alt="Skjermbilde av hvordan koden så ut før"
               />
             </div>
@@ -125,7 +125,7 @@
               <br />
               <p>Etter</p>
               <img
-                src="screenshots/empty heading2.png"
+                src="screenshots/emptyheading2.png"
                 alt="Skjermbilde av hvordan koden ser ut etter implementering av endringer"
               />
             </div>
@@ -135,7 +135,7 @@
               <br />
               <p>Før</p>
               <img
-                src="screenshots/empty heading2.png"
+                src="screenshots/emptyheading2.png"
                 alt="Skjermbilde av hvordan koden så ut før endring"
               />
             </div>
@@ -247,21 +247,18 @@
       </main>
 
       <footer>
-        <a
-          href="https://nb-no.facebook.com/"
-          class="fa-brands fa-facebook"
-          name="Facebook"
-        ></a>
-        <a
-          href="https://www.instagram.com//"
-          class="fa-brands fa-instagram"
-          name="Instagram"
-        ></a>
-        <a
-          href="https://twitter.com/i/flow/login/"
-          class="fa-brands fa-twitter"
-          name="Twitter"
-        ></a>
+        <a href="https://nb-no.facebook.com/">
+          <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+          <span class="sr-only">Facebook</span>
+        </a>
+        <a href="https://www.instagram.com//">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          <span class="sr-only">Instagram</span>
+        </a>
+        <a href="https://twitter.com/i/flow/login/">
+          <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+          <span class="sr-only">Twitter</span>
+        </a>
       </footer>
     </div>
   </body>

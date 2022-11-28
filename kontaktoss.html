@@ -77,12 +77,12 @@
     <!-- Kilde til hamburgermeny: https://www.youtube.com/watch?v=oLgtucwjVII  -->
     <nav>
       <input type="checkbox" id="check" name="checkbtn" />
-      <label for="check" class="checkbtn">
+      <label for="check" class="checkbtn" aria-label="Checkbtn">
         <i class="fa-solid fa-bars"></i>
       </label>
       <label class="logo"><a href="index.html">Logo</a></label>
       <ul>
-        <li><a class="active" href="index.html" target="_blank">Hjem</a></li>
+        <li><a href="index.html" target="_blank">Hjem</a></li>
         <li><a href="UU-vs-SEO.html" target="_blank"> UU vs SEO</a></li>
         <li><a href="CMS.html" target="_blank">CMS</a></li>
         <li><a href="Analyse.html" target="_blank">Analyse</a></li>
@@ -120,6 +120,7 @@
           <label for="email">Epost:</label> <i class="fa-solid fa-envelope"></i>
           <input type="email" name="email" id="email" />
           <label for="message">Melding:</label>
+          <input id="message" />
           <i class="fa-solid fa-message"></i>
           <textarea name="message" cols="25" rows="10"></textarea>
           <button type="submit">Send</button>
@@ -166,10 +167,10 @@
     </main>
 
     <iframe
+      class="kart"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2046.7847068654007!2d11.37375771547778!3d59.13600203355115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412ead797b67f%3A0x26c340b454dc8f35!2sB%20R%20A%20Veien%2C%20Halden!5e0!3m2!1sno!2sno!4v1668609228940!5m2!1sno!2sno"
-      width="100%"
-      height="450"
       style="border: 0"
+      height="450"
       title="Google map med adresse til skolen"
       allowfullscreen=""
       loading="lazy"
@@ -177,21 +178,18 @@
     ></iframe>
 
     <footer>
-      <a
-        href="https://nb-no.facebook.com/"
-        class="fa-brands fa-facebook"
-        name="Facebook"
-      ></a>
-      <a
-        href="https://www.instagram.com//"
-        class="fa-brands fa-instagram"
-        name="Instagram"
-      ></a>
-      <a
-        href="https://twitter.com/i/flow/login/"
-        class="fa-brands fa-twitter"
-        name="Twitter"
-      ></a>
+      <a href="https://nb-no.facebook.com/">
+        <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+        <span class="sr-only">Facebook</span>
+      </a>
+      <a href="https://www.instagram.com//">
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        <span class="sr-only">Instagram</span>
+      </a>
+      <a href="https://twitter.com/i/flow/login/">
+        <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+        <span class="sr-only">Twitter</span>
+      </a>
     </footer>
   </body>
 </html>

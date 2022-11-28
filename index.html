@@ -81,7 +81,7 @@
       <!-- Kilde til hamburgermeny: https://www.youtube.com/watch?v=oLgtucwjVII  -->
       <nav>
         <input type="checkbox" id="check" name="checkbtn" />
-        <label for="check" class="checkbtn">
+        <label for="check" class="checkbtn" aria-label="Checkbtn">
           <i class="fa-solid fa-bars"></i>
         </label>
         <label class="logo"><a href="index.html">Logo</a></label>
@@ -159,21 +159,18 @@
       </main>
 
       <footer>
-        <a
-          href="https://nb-no.facebook.com/"
-          class="fa-brands fa-facebook"
-          name="Facebook"
-        ></a>
-        <a
-          href="https://www.instagram.com//"
-          class="fa-brands fa-instagram"
-          name="Instagram"
-        ></a>
-        <a
-          href="https://twitter.com/i/flow/login/"
-          class="fa-brands fa-twitter"
-          name="Twitter"
-        ></a>
+        <a href="https://nb-no.facebook.com/">
+          <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+          <span class="sr-only">Facebook</span>
+        </a>
+        <a href="https://www.instagram.com//">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          <span class="sr-only">Instagram</span>
+        </a>
+        <a href="https://twitter.com/i/flow/login/">
+          <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+          <span class="sr-only">Twitter</span>
+        </a>
       </footer>
     </div>
   </body>
