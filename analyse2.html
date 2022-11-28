@@ -83,10 +83,11 @@
 
       <!-- Kilde til hamburgermeny: https://www.youtube.com/watch?v=oLgtucwjVII  -->
       <nav>
-        <input type="checkbox" id="check" name="checkbtn" />
-        <label for="check" class="checkbtn" aria-label="Checkbtn">
+        <label for="check" class="checkbtn">
           <i class="fa-solid fa-bars"></i>
+          <span class="sr-only">Checkbtn</span>
         </label>
+        <input type="checkbox" id="check" title="Checkbtn" />
         <label class="logo"><a href="index.html">Logo</a></label>
         <ul>
           <li><a href="index.html" target="_blank">Hjem</a></li>
@@ -143,7 +144,7 @@
               <br />
               <p>Etter</p>
               <img
-                src="screenshots/emptylink1.png"
+                src="screenshots/emptylinks.png"
                 alt="Skjermbilde av hvordan koden ser ut etter endring"
               />
             </div>
@@ -161,7 +162,7 @@
               <br />
               <p>Etter</p>
               <img
-                src="screenshots/emptyform-label2.png"
+                src="screenshots/form.png"
                 alt="Skjermbilde av koden etter endring"
               />
             </div>
@@ -192,18 +193,27 @@
             analysert og vurdert nettstedet mitt for universell utforming.
             <br />
             <br />
+            <!-- Kilde til hvordan jeg løste erroren empty links: https://blog.pope.tech/2020/03/13/empty-link-example/ -->
             Det som ble gjort når nettstedet mitt fikk Empty heading som error,
             var at h4-taggene ble fjernet fra alle innholdssidene på nettstedet.
-            Under andre erroren, altså empty links ble det skrevet en tekst,
-            altså et nøkkelord på hva denne linken er.
+            Under andre erroren, altså empty links la jeg til en span-tag med
+            class kalt "sr-only" og skrev teksten innenfor disse taggene. I
+            tillegg la jeg til en aria-hidden ="true".
             <br />
             <br />
-            Det samme gjaldt det for errorer Empty form label hvor det ble
-            skrevet et nøkkelord for å gi form labelen en tekst. Contrast
-            errorer var litt utfordrende med tanke på at uansett hvilke farge
-            som ble valgt, kom samme error opp. Etter vurdering av alle fargene
-            ble det tilslutt fargen hvit, og det ble tatt en vurdering på at
-            denne fargen var best synlig for brukere.
+            Ved håndtering av erroren empty form label, la jeg til en
+            span-element med en klasse innenfor label elementet. Innenfor
+            span-elementet skrev jeg en tekst. Contrast errorer var litt
+            utfordrende med tanke på at uansett hvilke farge som ble valgt, kom
+            samme error opp. Etter vurdering av alle fargene ble det tilslutt
+            fargen hvit, og det ble tatt en vurdering på at denne fargen var
+            best synlig for brukere.
+          </p>
+          <br />
+          <br />
+          <p>
+            Etter å ha rettet opp alle errorene, kjørte jeg dette på nytt på
+            Wave webaim, og fikk opp at errorene var blitt håndtert.
           </p>
         </article>
         <br />

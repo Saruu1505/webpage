@@ -280,7 +280,7 @@ section {
 
   footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     max-width: 100%;
   }
 
